@@ -3,7 +3,7 @@
 > **A modern portfolio showcasing my journey as an AI & Full-Stack Developer, featuring projects, technical skills, certifications, and professional experience.**
 
 <p align="center">
-  <a href="YOUR_PORTFOLIO_URL">
+  <a href="https://priyanka-sharma-portfolio.vercel.app/">
     <img src="https://img.shields.io/badge/🌍%20Live%20Portfolio-Visit-blue?style=for-the-badge" alt="Portfolio">
   </a>
   <img src="https://img.shields.io/badge/React-TypeScript-61DAFB?style=for-the-badge&logo=react" alt="React">
@@ -111,7 +111,7 @@ npm run dev
 
 Visit the portfolio here:
 
-**YOUR_PORTFOLIO_URL**
+**https://priyanka-sharma-portfolio.vercel.app/**
 
 ---
 
