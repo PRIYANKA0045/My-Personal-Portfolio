@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Priyanka Sharma | AI & Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Priyanka Sharma, Engineering Student and AI & Full-Stack Developer. Showcasing AI-powered applications, software automation, and data-driven projects.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Cursor Glow Trail -->
+  <div id="cursor-glow"></div>
+
+  <!-- Premium Ambient Background Glow Orbs -->
+  <div class="ambient-glow-orbs">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="glow-orb glow-orb-4"></div>
+  </div>
+
+  <!-- Fullscreen Confetti Canvas for Form Submission -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="nav-header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        Priyanka<span>.</span>
+      </a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile Menu Hamburger -->
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <!-- Background Particles Canvas -->
+      <canvas id="hero-canvas"></canvas>
+      
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-microchip"></i>
+          <span>Computer Science & Engineering (AI & ML) Undergrad</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Priyanka Sharma</span>
+        </h1>
+        
+        <div class="hero-subtitle">
+          I'm a <span id="typing-text" class="cyan-glow"></span><span class="typing-cursor">|</span>
+        </div>
+        
+        <p class="hero-description">
+          Computer Science & Engineering undergrad specializing in AI/ML, web development, and data systems. I build highly functional, clean, and robust software tools to solve real-world engineering problems.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="https://drive.google.com/file/d/1F0R1zGC2fmdkK9gvFLHo2fDRC0o3yuzc/view?usp=drivesdk" target="_blank" id="hero-projects-btn" class="btn-playful btn-primary">
+          <i class="fa-solid fa-file-pdf"></i> My Resume
+          </a>
+          <a href="#projects" class="btn-playful btn-secondary" id="hero-projects-btn">
+            <i class="fa-solid fa-folder-open"></i> View Projects
+          </a>
+        </div>
+      </div>
+      
+      <a href="#about" class="scroll-down" id="scroll-arrow">
+        <span>Explore Portfolio</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-laptop-code cyan-glow"></i> About Me
+      </h2>
+      
+      <div class="about-container">
+        <!-- Visual Column (Avatar and Fun Fact Bubble) -->
+        <div class="about-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-inner">
+              <!-- Professional AI & Neural Connection Network SVG -->
+              <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.3));">
+                <defs>
+                  <radialGradient id="grad-neural" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#020205" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff2a85"/>
+                    <stop offset="100%" stop-color="#00f0ff"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="90" fill="url(#grad-neural)" />
+                
+                <!-- Orbiting Rings -->
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="12 6" opacity="0.3" />
+                <circle cx="100" cy="100" r="50" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+                
+                <!-- Synapse Connection Lines -->
+                <g stroke="#6366f1" stroke-width="1.5" opacity="0.7">
+                  <line x1="100" y1="100" x2="60" y2="60" />
+                  <line x1="100" y1="100" x2="55" y2="130" />
+                  <line x1="100" y1="100" x2="145" y2="65" />
+                  <line x1="100" y1="100" x2="140" y2="140" />
+                  
+                  <line x1="60" y1="60" x2="55" y2="130" stroke="#ff2a85" stroke-width="1" opacity="0.4" stroke-dasharray="3 3" />
+                  <line x1="145" y1="65" x2="140" y2="140" stroke="#00f59b" stroke-width="1" opacity="0.4" stroke-dasharray="3 3" />
+                  <line x1="60" y1="60" x2="145" y2="65" stroke="#ffb800" stroke-width="1" opacity="0.3" />
+                </g>
+                
+                <!-- Central Node -->
+                <circle cx="100" cy="100" r="14" fill="#0c0a18" stroke="url(#grad-accent)" stroke-width="3" />
+                <circle cx="100" cy="100" r="6" fill="#00f0ff" />
+                
+                <!-- Outer Nodes -->
+                <circle cx="60" cy="60" r="8" fill="#0c0a18" stroke="#ff2a85" stroke-width="2" />
+                <circle cx="60" cy="60" r="3.5" fill="#ff2a85" />
+                
+                <circle cx="55" cy="130" r="9" fill="#0c0a18" stroke="#00f0ff" stroke-width="2" />
+                <circle cx="55" cy="130" r="4" fill="#00f0ff" />
+                
+                <circle cx="145" cy="65" r="10" fill="#0c0a18" stroke="#7c3aed" stroke-width="2" />
+                <circle cx="145" cy="65" r="4.5" fill="#00f59b" />
+                
+                <circle cx="140" cy="140" r="8" fill="#0c0a18" stroke="#ffb800" stroke-width="2" />
+                <circle cx="140" cy="140" r="3.5" fill="#ffb800" />
+                
+                <!-- Code Matrix symbols floating around -->
+                <text x="35" y="95" font-family="monospace" font-size="10" fill="#64748b" opacity="0.7">&lt;AI&gt;</text>
+                <text x="135" y="105" font-family="monospace" font-size="10" fill="#64748b" opacity="0.7">f(x)</text>
+              </svg>
+            </div>
+            <div class="sparkles-glow"></div>
+          </div>
+          
+          <div class="glass-card fun-fact-bubble">
+            <p><span class="gradient-text" style="font-weight:700;">Career Objective:</span> Seeking opportunities to apply software engineering and AI skills to develop innovative products that improve user experiences and solve real-world problems.</p>
+          </div>
+        </div>
+        
+        <!-- Text/Details Column (Tabs structure) -->
+        <div class="glass-card about-card">
+          <div class="about-tabs">
+            <button class="tab-btn active" data-tab="story">Overview</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+            <button class="tab-btn" data-tab="achievements">Achievements</button>
+          </div>
+          
+          <!-- Tab 1: Overview & Strengths -->
+          <div id="tab-story" class="tab-panel active">
+            <h3>Professional Profile</h3>
+            <p>
+              I am an enthusiastic engineering student with experience in Python, HTML, CSS, databases, AI technologies, and web development. I enjoy transforming ideas into functional applications and continuously learning new technologies.
+            </p>
+            <p>
+              My goal is to develop innovative solutions that create real-world impact, particularly in areas such as artificial intelligence, accessibility, education, healthcare, and productivity.
+            </p>
+            
+            <h4 style="margin: 1.5rem 0 0.75rem 0; color: white;">Core Strengths:</h4>
+            <div class="facts-grid" style="grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 0.75rem;">
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">🧠</span><span class="fact-text">Problem Solving</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">💻</span><span class="fact-text">Software Dev</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">🤖</span><span class="fact-text">Artificial Intelligence</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">📊</span><span class="fact-text">Data Analytics</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">🌐</span><span class="fact-text">Web Development</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">💾</span><span class="fact-text">Database Mgmt</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">🔌</span><span class="fact-text">API Integration</span></div>
+              <div class="fact-item" style="padding: 0.75rem 1rem;"><span class="fact-icon" style="font-size:1.2rem;">🤝</span><span class="fact-text">Team Collaboration</span></div>
+            </div>
+          </div>
+          
+          <!-- Tab 2: Education -->
+          <div id="tab-education" class="tab-panel">
+  <h3>Academic Background 🎓</h3>
+
+  <div class="journey-list">
+    <div class="journey-item">
+
+      <div class="journey-year">2022 – 2026</div>
+
+      <div class="journey-title">
+        Bachelor of Engineering (B.E.) – Computer Science & Engineering (AI & ML)
+      </div>
+
+      <div class="journey-desc" style="color:var(--color-cyan); font-weight:700;">
+        Smt. Indira Gandhi College of Engineering, Navi Mumbai<br>
+        Affiliated to Mumbai University
+      </div>
+
+      <p style="margin-top:1rem; color:var(--text-secondary); line-height:1.7;">
+        Building a strong foundation in AI, software engineering, and full-stack development through academics, research, and hands-on projects.
+      </p>
+
+      <h4 style="margin:1.2rem 0 .75rem; color:white;">Core Coursework</h4>
+
+      <div class="skills-cloud" style="gap:.5rem;">
+        <span class="project-tag">DSA</span>
+        <span class="project-tag">DBMS</span>
+        <span class="project-tag">OS</span>
+        <span class="project-tag">CN</span>
+        <span class="project-tag">Software Engineering</span>
+        <span class="project-tag">AI</span>
+        <span class="project-tag">Machine Learning</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+          
+          <!-- Tab 3: Achievements -->
+          <div id="tab-achievements" class="tab-panel">
+            <h3>Key Accomplishments</h3>
+            <div class="journey-list">
+              <div class="journey-item">
+                <div class="journey-title">Developed Multiple AI-Powered Applications</div>
+                <div class="journey-desc">Successfully designed and integrated APIs like AssemblyAI and ElevenLabs for translation, speech, and voice synthesis.</div>
+              </div>
+              <div class="journey-item">
+                <div class="journey-title">Built Real-World Web Apps</div>
+                <div class="journey-desc">Utilized lightweight frameworks such as Flask and Streamlit to build accessible workflow tools.</div>
+              </div>
+              <div class="journey-item">
+                <div class="journey-title">Accessibility-Focused Solutions</div>
+                <div class="journey-desc">Developed applications designed to assist elderly caretakers and bridge language translation barriers.</div>
+              </div>
+              <div class="journey-item">
+                <div class="journey-title">Research & Academic Contributions</div>
+                <div class="journey-desc">Contributed to academic papers and software systems including published research work.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-brain cyan-glow"></i> Technical Expertise
+      </h2>
+      
+      <div class="skills-wrapper">
+        <!-- Programming & Databases -->
+        <div class="glass-card skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-code cyan-glow"></i> Languages & Databases</h3>
+          <div class="skills-cloud">
+            <div class="skill-pill pill-pink"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill-pill pill-cyan"><i class="fa-solid fa-database"></i> SQL</div>
+            <div class="skill-pill pill-yellow"><i class="fa-solid fa-table"></i> MySQL</div>
+            <div class="skill-pill pill-purple"><i class="fa-solid fa-server"></i> SQLite</div>
+            <div class="skill-pill pill-mint"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill-pill pill-orange"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill-pill pill-pink"><i class="fa-brands fa-js"></i> JavaScript (Basic)</div>
+          </div>
+        </div>
+        
+        <!-- Frameworks & AI Tools -->
+        <div class="glass-card skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-microchip pink-glow"></i> Frameworks, Libraries & AI Tools</h3>
+          <div class="skills-cloud">
+            <div class="skill-pill pill-purple"><i class="fa-solid fa-cubes"></i> Flask</div>
+            <div class="skill-pill pill-cyan"><i class="fa-solid fa-chart-simple"></i> Streamlit</div>
+            <div class="skill-pill pill-yellow"><i class="fa-solid fa-sliders"></i> Gradio</div>
+            <div class="skill-pill pill-pink"><i class="fa-solid fa-microphone-lines"></i> AssemblyAI</div>
+            <div class="skill-pill pill-mint"><i class="fa-solid fa-volume-high"></i> ElevenLabs</div>
+            <div class="skill-pill pill-orange"><i class="fa-solid fa-brain"></i> Machine Learning Basics</div>
+            <div class="skill-pill pill-cyan"><i class="fa-solid fa-language"></i> NLP Concepts</div>
+          </div>
+        </div>
+
+        <!-- Dev & Cloud Tools -->
+        <div class="glass-card skill-category">
+          <h3 class="skill-category-title"><i class="fa-solid fa-toolbox yellow-glow"></i> Developer & Cloud Tools</h3>
+          <div class="skills-cloud">
+            <div class="skill-pill pill-yellow"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-pill pill-pink"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="skill-pill pill-mint"><i class="fa-solid fa-code"></i> VS Code</div>
+            <div class="skill-pill pill-purple"><i class="fa-solid fa-book-open"></i> Jupyter Notebook</div>
+            <div class="skill-pill pill-cyan"><i class="fa-solid fa-cloud-arrow-up"></i> Streamlit Cloud</div>
+            <div class="skill-pill pill-orange"><i class="fa-solid fa-server"></i> Gradio Hosting</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-folder-open pink-glow"></i> Featured Projects
+      </h2>
+      
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Show All</button>
+        <button class="filter-btn" data-filter="ai">AI Applications</button>
+        <button class="filter-btn" data-filter="web">Web & Systems</button>
+      </div>
+      
+      <!-- Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project: HireSense AI -->
+        <div class="glass-card project-card" data-category="ai">
+          <div class="project-thumbnail">
+            <svg viewBox="0 0 300 200" width="100%" height="100%" style="background:#05070f; font-family:'JetBrains Mono', 'Fira Code', monospace;">
+              <!-- Grid background -->
+              <path d="M0,40 L300,40 M0,80 L300,80 M0,120 L300,120 M0,160 L300,160 M50,0 L50,200 M100,0 L100,200 M150,0 L150,200 M200,0 L200,200 M250,0 L250,200" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+              <rect x="10" y="10" width="280" height="180" rx="6" fill="none" stroke="rgba(139, 92, 246, 0.15)" stroke-width="1" />
+              
+              <!-- Tech labels -->
+              <text x="20" y="28" font-size="8" fill="rgba(139, 92, 246, 0.7)" font-weight="bold">COGNITIVE_EVAL_ENGINE // v1.0</text>
+              <text x="280" y="28" font-size="8" fill="rgba(20, 184, 166, 0.7)" text-anchor="end" font-weight="bold">RECRUIT_AI: ACTIVE</text>
+              
+              <!-- Neural web connections to center (150, 95) -->
+              <line x1="80" y1="65" x2="150" y2="95" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5" stroke-dasharray="3 3" />
+              <line x1="220" y1="65" x2="150" y2="95" stroke="rgba(14, 165, 233, 0.3)" stroke-width="1.5" stroke-dasharray="3 3" />
+              <line x1="80" y1="125" x2="150" y2="95" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1.5" stroke-dasharray="3 3" />
+              <line x1="220" y1="125" x2="150" y2="95" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5" stroke-dasharray="3 3" />
+              
+              <!-- Outer web bounding box/links -->
+              <polygon points="80,65 220,65 220,125 80,125" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+              
+              <!-- Central Recruiter Brain Nodes -->
+              <circle cx="150" cy="95" r="22" fill="none" stroke="rgba(139, 92, 246, 0.2)" stroke-width="3" />
+              <circle cx="150" cy="95" r="14" fill="none" stroke="rgba(14, 165, 233, 0.3)" stroke-width="2" />
+              <circle cx="150" cy="95" r="6" fill="#8b5cf6" />
+              
+              <!-- Surrounding Attribute Nodes with custom halo shadows -->
+              <!-- Skills (Mint) -->
+              <circle cx="80" cy="65" r="5" fill="#10b981" />
+              <circle cx="80" cy="65" r="9" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-width="2" />
+              <text x="80" y="52" font-size="7" fill="rgba(16, 185, 129, 0.8)" text-anchor="middle" font-weight="bold">SKILLS</text>
+              
+              <!-- Experience (Cyan) -->
+              <circle cx="220" cy="65" r="5" fill="#0ea5e9" />
+              <circle cx="220" cy="65" r="9" fill="none" stroke="rgba(14, 165, 233, 0.2)" stroke-width="2" />
+              <text x="220" y="52" font-size="7" fill="rgba(14, 165, 233, 0.8)" text-anchor="middle" font-weight="bold">EXPERIENCE</text>
+              
+              <!-- Achievements (Orange) -->
+              <circle cx="80" cy="125" r="5" fill="#f59e0b" />
+              <circle cx="80" cy="125" r="9" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="2" />
+              <text x="80" y="142" font-size="7" fill="rgba(245, 158, 11, 0.8)" text-anchor="middle" font-weight="bold">ACHIEVEMENTS</text>
+              
+              <!-- Potential (Pink) -->
+              <circle cx="220" cy="125" r="5" fill="#ec4899" />
+              <circle cx="220" cy="125" r="9" fill="none" stroke="rgba(236, 72, 153, 0.2)" stroke-width="2" />
+              <text x="220" y="142" font-size="7" fill="rgba(236, 72, 153, 0.8)" text-anchor="middle" font-weight="bold">POTENTIAL</text>
+              
+              <!-- Heading label -->
+              <text x="150" y="172" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1.5">COGNITIVE_RECRUIT_MAP</text>
+            </svg>
+            <span class="project-badge">AI Recruiter</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">HireSense AI</h3>
+            <p class="project-card-desc">
+              An AI-powered hiring assistant that evaluates candidates like an experienced recruiter by understanding skills, experience, achievements, and potential instead of relying only on keyword matching.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Gemini API</span>
+              <span class="project-tag">Semantic Search</span>
+              <span class="project-tag">HR Tech</span>
+            </div>
+            <a href="https://hireai.ai.studio" target="_blank" class="project-link">
+              Live Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project: Bolly Bidu AI -->
+<div class="glass-card project-card" data-category="ai">
+  <div class="project-thumbnail">
+    <svg viewBox="0 0 300 200" width="100%" height="100%" style="background:#05070f; font-family:'JetBrains Mono', 'Fira Code', monospace;">
+      <!-- Grid background -->
+      <path d="M0,40 L300,40 M0,80 L300,80 M0,120 L300,120 M0,160 L300,160 M50,0 L50,200 M100,0 L100,200 M150,0 L150,200 M200,0 L200,200 M250,0 L250,200" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+      <rect x="10" y="10" width="280" height="180" rx="6" fill="none" stroke="rgba(56, 189, 248, 0.15)" stroke-width="1" />
+      
+      <!-- Tech data labels -->
+      <text x="20" y="28" font-size="8" fill="rgba(56, 189, 248, 0.6)" font-weight="bold">NLP_MODEL_ENGINE // v2.0</text>
+      <text x="280" y="28" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="end">STATUS: ACTIVE</text>
+      
+      <!-- Conversational neural node visualization -->
+      <path d="M 60,110 Q 150,50 240,110" fill="none" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.5" stroke-dasharray="4 2" />
+      <path d="M 60,110 Q 150,150 240,110" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+      
+      <!-- Connected Nodes -->
+      <circle cx="60" cy="110" r="6" fill="#030712" stroke="#38bdf8" stroke-width="2" />
+      <circle cx="150" cy="100" r="10" fill="#030712" stroke="#6366f1" stroke-width="3" />
+      <circle cx="240" cy="110" r="6" fill="#030712" stroke="#38bdf8" stroke-width="2" />
+      
+      <!-- Core processor representation -->
+      <circle cx="150" cy="100" r="4" fill="#6366f1" />
+      <path d="M150,90 L150,70 M150,110 L150,130 M140,100 L120,100 M160,100 L180,100" stroke="rgba(99,102,241,0.5)" stroke-width="1" />
+      
+      <!-- Floating data pulses -->
+      <circle cx="105" cy="80" r="2" fill="#38bdf8" />
+      <circle cx="195" cy="120" r="2" fill="#10b981" />
+      
+      <text x="150" y="165" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">CONVERSATIONAL_MATRIX</text>
+    </svg>
+
+    <span class="project-badge">AI Chatbot</span>
+  </div>
+
+  <div class="project-body">
+    <h3 class="project-card-title">Bolly Bidu AI</h3>
+
+    <p class="project-card-desc">
+      A Bollywood-inspired AI chatbot built entirely in Python that delivers
+      entertaining conversations, movie recommendations, celebrity trivia,
+      iconic dialogues, and personalized Bollywood-themed interactions through
+      an intuitive web interface.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">Python</span>
+      <span class="project-tag">Streamlit</span>
+      <span class="project-tag">GEMINI API</span>
+      <span class="project-tag">RAG</span>
+      <span class="project-tag">Prompt Engineering</span>
+    </div>
+
+    <a href="https://bidu-ai.streamlit.app/" target="_blank" class="project-link">
+      Live Demo <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+
+        <!-- Project 3: AI Career Guidance Chatbot -->
+        <div class="glass-card project-card" data-category="ai">
+          <div class="project-thumbnail">
+            <svg viewBox="0 0 300 200" width="100%" height="100%" style="background:#05070f; font-family:'JetBrains Mono', 'Fira Code', monospace;">
+              <!-- Grid background -->
+              <path d="M0,40 L300,40 M0,80 L300,80 M0,120 L300,120 M0,160 L300,160 M50,0 L50,200 M100,0 L100,200 M150,0 L150,200 M200,0 L200,200 M250,0 L250,200" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+              <rect x="10" y="10" width="280" height="180" rx="6" fill="none" stroke="rgba(245, 158, 11, 0.15)" stroke-width="1" />
+              
+              <!-- Tech label -->
+              <text x="20" y="28" font-size="8" fill="rgba(245, 158, 11, 0.6)" font-weight="bold">PREDICTIVE_DECISION_TREE</text>
+              <text x="280" y="28" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="end">R_SQUARED: 0.982</text>
+              
+              <!-- Branching Decision Nodes -->
+              <line x1="150" y1="50" x2="90" y2="100" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              <line x1="150" y1="50" x2="210" y2="100" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              
+              <line x1="90" y1="100" x2="50" y2="140" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              <line x1="90" y1="100" x2="110" y2="140" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              <line x1="210" y1="100" x2="170" y2="140" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              <line x1="210" y1="100" x2="250" y2="140" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+              
+              <!-- Glowing Nodes -->
+              <circle cx="150" cy="50" r="7" fill="#030712" stroke="#f59e0b" stroke-width="2.5" />
+              <circle cx="90" cy="100" r="5" fill="#030712" stroke="#6366f1" stroke-width="2" />
+              <circle cx="210" cy="100" r="5" fill="#030712" stroke="#38bdf8" stroke-width="2" />
+              
+              <circle cx="50" cy="140" r="4" fill="#10b981" />
+              <circle cx="110" cy="140" r="4" fill="rgba(255,255,255,0.3)" />
+              <circle cx="170" cy="140" r="4" fill="rgba(255,255,255,0.3)" />
+              <circle cx="250" cy="140" r="4" fill="#38bdf8" />
+              
+              <text x="150" y="175" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">ANALYTIC_CLASSIFIER</text>
+            </svg>
+            <span class="project-badge">AI Chatbot</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-card-title">AI Career Guidance Chatbot</h3>
+            <p class="project-card-desc">An intelligent career recommendation system that analyzes user interests and suggests suitable career paths.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Streamlit</span>
+            </div>
+<a href="https://ai-powered-career-guidance-chatbot.streamlit.app/" target="_blank" class="project-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>          
+</div>
+        </div>
+<!-- Project 4: Employee Task Automation System -->
+<div class="glass-card project-card" data-category="web">
+  <div class="project-thumbnail">
+    <svg viewBox="0 0 300 200" width="100%" height="100%" style="background:#05070f; font-family:'JetBrains Mono', 'Fira Code', monospace;">
+      <!-- Grid background -->
+      <path d="M0,40 L300,40 M0,80 L300,80 M0,120 L300,120 M0,160 L300,160 M50,0 L50,200 M100,0 L100,200 M150,0 L150,200 M200,0 L200,200 M250,0 L250,200" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+      <rect x="10" y="10" width="280" height="180" rx="6" fill="none" stroke="rgba(16, 185, 129, 0.15)" stroke-width="1" />
+      
+      <!-- Tech label -->
+      <text x="20" y="28" font-size="8" fill="rgba(16, 185, 129, 0.6)" font-weight="bold">SYSTEMS_AUTOMATION_PIPELINE</text>
+      <text x="280" y="28" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="end">DAEMON: RUNNING</text>
+      
+      <!-- Flow steps with high precision connectors -->
+      <rect x="35" y="75" width="50" height="40" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <text x="60" y="99" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">DATA</text>
+      
+      <line x1="85" y1="95" x2="125" y2="95" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 2" />
+      <polygon points="125,95 119,91 119,99" fill="#10b981" />
+      
+      <rect x="125" y="75" width="50" height="40" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <text x="150" y="99" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">TRANS</text>
+      
+      <line x1="175" y1="95" x2="215" y2="95" stroke="#38bdf8" stroke-width="1.5" />
+      <polygon points="215,95 209,91 209,99" fill="#38bdf8" />
+      
+      <rect x="215" y="75" width="50" height="40" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <text x="240" y="99" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">LOAD</text>
+      
+      <!-- Micro state rings -->
+      <circle cx="60" cy="130" r="3" fill="#6366f1" />
+      <circle cx="150" cy="130" r="3" fill="#f59e0b" />
+      <circle cx="240" cy="130" r="3" fill="#10b981" />
+      <line x1="63" y1="130" x2="147" y2="130" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <line x1="153" y1="130" x2="237" y2="130" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      
+      <text x="150" y="175" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">ETL_WORKFLOW_ENGINE</text>
+    </svg>
+
+    <span class="project-badge">Automation</span>
+  </div>
+
+  <div class="project-body">
+    <h3 class="project-card-title">Employee Task Automation</h3>
+
+    <p class="project-card-desc">
+      A workflow management application that automatically assigns tasks,
+      tracks employee progress, and streamlines HR operations through an
+      intelligent dashboard.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">HTML</span>
+      <span class="project-tag">CSS</span>
+      <span class="project-tag">JavaScript</span>
+      <span class="project-tag">Flask</span>
+      <span class="project-tag">SQLite</span>
+    </div>
+    <span><a href="https://hrms-506778064157.asia-southeast1.run.app/"
+     target="_blank"
+     class="project-link">
+    Live Demo <i class="fa-solid fa-arrow-right"></i> </a></span>
+  </div>
+</div>
+
+<!-- Project 5: Personal Portfolio Website -->
+<div class="glass-card project-card" data-category="web">
+  <div class="project-thumbnail">
+    <svg viewBox="0 0 300 200" width="100%" height="100%" style="background:#05070f; font-family:'JetBrains Mono', 'Fira Code', monospace;">
+      <!-- Grid background -->
+      <path d="M0,40 L300,40 M0,80 L300,80 M0,120 L300,120 M0,160 L300,160 M50,0 L50,200 M100,0 L100,200 M150,0 L150,200 M200,0 L200,200 M250,0 L250,200" stroke="rgba(255,255,255,0.02)" stroke-width="1" />
+      <rect x="10" y="10" width="280" height="180" rx="6" fill="none" stroke="rgba(99, 102, 241, 0.15)" stroke-width="1" />
+      
+      <!-- Tech label -->
+      <text x="20" y="28" font-size="8" fill="rgba(99, 102, 241, 0.6)" font-weight="bold">RESPONSIVE_FRAMEWORK_GRID</text>
+      <text x="280" y="28" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="end">RENDER: 60FPS</text>
+      
+      <!-- Isometric Responsive Layout stacks -->
+      <g transform="translate(40, -10) scale(0.9)">
+        <!-- Desktop wireframe -->
+        <rect x="40" y="70" width="120" height="80" rx="4" fill="rgba(3, 7, 18, 0.8)" stroke="#6366f1" stroke-width="1.5" />
+        <!-- Top bar details -->
+        <circle cx="50" cy="78" r="2" fill="#ef4444" />
+        <circle cx="56" cy="78" r="2" fill="#f59e0b" />
+        <circle cx="62" cy="78" r="2" fill="#10b981" />
+        <rect x="75" y="76" width="75" height="4" rx="2" fill="rgba(255,255,255,0.1)" />
+        
+        <!-- Content grids -->
+        <rect x="50" y="90" width="45" height="48" rx="2" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <rect x="105" y="90" width="45" height="12" rx="2" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
+        <rect x="105" y="108" width="45" height="30" rx="2" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        
+        <!-- Phone wireframe overlaying on the right -->
+        <rect x="140" y="95" width="40" height="70" rx="4" fill="rgba(3, 7, 18, 0.95)" stroke="#38bdf8" stroke-width="1.5" />
+        <circle cx="160" cy="100" r="1.5" fill="rgba(255,255,255,0.3)" />
+        <rect x="148" y="110" width="24" height="45" rx="1" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+        <circle cx="160" cy="160" r="2" fill="#38bdf8" />
+      </g>
+      
+      <text x="150" y="175" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">SYSTEMS_INTERFACE_ARCH</text>
+    </svg>
+
+    <span class="project-badge">This Website</span>
+  </div>
+
+  <div class="project-body">
+    <h3 class="project-card-title">Personal Portfolio Website</h3>
+
+    <p class="project-card-desc">
+      A modern AI-assisted portfolio website featuring interactive animations,
+      responsive design, glassmorphism UI, and immersive user experience.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">HTML</span>
+      <span class="project-tag">CSS</span>
+      <span class="project-tag">JavaScript</span>
+      <span class="project-tag">GSAP</span>
+      <span class="project-tag">AI Design</span>
+    </div>
+
+    <span class="project-link" data-project-id="portfolio-site">
+      Read Details <i class="fa-solid fa-arrow-right"></i>
+    </span>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- ==================== RESEARCH SECTION ==================== -->
+<section id="research" class="about-section" style="border-top:1px solid var(--border-glass); margin-top:4rem;">
+
+    <h2 class="section-title">
+        <i class="fa-solid fa-graduation-cap cyan-glow"></i>
+        Research & Publications
+    </h2>
+
+    <div class="glass-card" style="padding:2.5rem; max-width:900px; margin:0 auto;">
+
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+
+            <div>
+
+                <span class="project-badge"
+                    style="position:static; background:rgba(0,240,255,.1); border-color:var(--color-cyan); display:inline-block; margin-bottom:.75rem;">
+                    IRJET Publication • 2026
+                </span>
+
+                <h3 style="font-size:1.8rem; color:#fff; margin-bottom:.4rem;">
+                    Sahara Bot – An Elderly Care Management System
+                </h3>
+
+                <p style="color:var(--text-secondary);">
+                    Published in the International Research Journal of Engineering and Technology (IRJET)
+                </p>
+
+            </div>
+
+            <a href="https://www.irjet.net/archives/V13/i3/IRJET-V13I03284.pdf"
+               target="_blank"
+               class="btn-playful btn-primary"
+               style="padding:.6rem 1.3rem; font-size:.9rem;">
+
+                <i class="fa-solid fa-file-pdf"></i>
+                Read Paper
+
+            </a>
+
+        </div>
+
+        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:1.6rem; font-size:1.05rem;">
+
+            <strong>Sahara Bot</strong> is an AI-powered elderly care management system
+            designed to help senior citizens live more independently through intelligent
+            voice assistance, health management, and caregiver connectivity.
+            The research explores how conversational AI, OCR-based prescription
+            reading, reminder automation, emergency alert mechanisms, and
+            AI-driven assistance can improve the safety, well-being, and quality
+            of life of elderly users while reducing caregiver burden.
+
+        </p>
+
+        <h4 style="color:#fff; margin-bottom:1rem;">
+            Research Contributions
+        </h4>
+
+        <ul style="list-style:none; padding-left:.5rem;">
+
+            <li style="position:relative; padding-left:1.6rem; margin-bottom:.75rem; color:var(--text-secondary);">
+                <span style="position:absolute; left:0; color:var(--color-pink);">✔</span>
+                OCR-based medicine and prescription recognition for improved medication management.
+            </li>
+
+            <li style="position:relative; padding-left:1.6rem; margin-bottom:.75rem; color:var(--text-secondary);">
+                <span style="position:absolute; left:0; color:var(--color-pink);">✔</span>
+                Automated medication reminders, hydration alerts, and daily routine scheduling.
+            </li>
+
+            <li style="position:relative; padding-left:1.6rem; margin-bottom:.75rem; color:var(--text-secondary);">
+                <span style="position:absolute; left:0; color:var(--color-pink);">✔</span>
+                Emergency voice detection with instant caregiver notifications and monitoring dashboard.
+            </li>
+        </ul>
+
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:2rem;">
+
+            <span class="project-badge">Artificial Intelligence</span>
+            <span class="project-badge">Healthcare AI</span>
+            <span class="project-badge">NLP</span>
+            <span class="project-badge">OCR</span>
+            <span class="project-badge">Flask</span>
+            <span class="project-badge">Python</span>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- ==================== CONTACT ME SECTION ==================== -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-envelope cyan-glow"></i> Get in Touch
+      </h2>
+      
+      <div class="contact-container">
+        <!-- Details Column -->
+        <div class="contact-info">
+          <h3>Let's Connect & Collaborate</h3>
+          <p style="color: var(--text-secondary); line-height: 1.6;">
+            I am always open to professional opportunities, project collaborations, or discussions about software engineering, data analytics, and Artificial Intelligence.
+          </p>
+          
+          <div style="display:flex; flex-direction:column; gap: 1rem;">
+            <!-- Email -->
+            <a href="mailto:sharma.priyankaaa0045@gmail.com" class="glass-card contact-card" id="contact-email">
+              <div class="contact-icon pink">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-detail">
+                <span class="detail-label">Email</span>
+                <span class="detail-value">sharma.priyankaaa0045@gmail.com</span>
+              </div>
+            </a>
+            
+            <!-- Location -->
+            <div class="glass-card contact-card">
+              <div class="contact-icon cyan">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="contact-detail">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Navi Mumbai, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Socials -->
+          <div class="social-links">
+            <a href="https://github.com/PRIYANKA0045" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/priyanka-sharma-489560249/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/18mEybfpkK/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        
+        <!-- Interactive Form Column -->
+        <div class="glass-card contact-form-card">
+          <form id="contact-form">
+            <input type="hidden" name="access_key" id="form-access-key" value="48a3edea-f08c-49ab-b343-61b32b6fee94">
+            <div class="form-group">
+              <label for="form-name" class="form-label"><i class="fa-solid fa-user pink-glow"></i> Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email" class="form-label"><i class="fa-solid fa-envelope cyan-glow"></i> Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="your.email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-msg" class="form-label"><i class="fa-solid fa-message yellow-glow"></i> Message</label>
+              <textarea id="form-msg" class="form-input" placeholder="Describe your project, question, or collaboration opportunity..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-playful btn-primary" style="width: 100%; justify-content: center;" id="form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            
+            <!-- Form Success Status -->
+            <div class="form-status" id="form-status-msg">
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully. I will get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- End content-wrapper -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="app-footer">
+    <div class="footer-content">
+      <a href="#hero" class="footer-logo">
+        Priyanka<span>.</span>
+      </a>
+      <p class="footer-text">
+        Designed & coded with <span class="footer-heart">❤️</span> by Priyanka Sharma &copy; 2026.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== DETAILED MODAL OVERLAY ==================== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="glass-card modal-card">
+      <button class="modal-close-btn" id="modal-close-trigger" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-img-container" id="modal-project-img">
+        <!-- Populated dynamically via JS -->
+      </div>
+      
+      <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+      
+      <div class="modal-meta" id="modal-project-meta">
+        <span><i class="fa-solid fa-calendar-days"></i> Completed: 2025</span>
+        <span><i class="fa-solid fa-tag"></i> Code Project</span>
+      </div>
+      
+      <p class="modal-description" id="modal-project-desc">
+        Project description goes here...
+      </p>
+      
+      <div class="modal-features">
+        <h4>Key Features / Specs:</h4>
+        <ul id="modal-project-features">
+          <li>Feature 1 description</li>
+          <li>Feature 2 description</li>
+          <li>Feature 3 description</li>
+        </ul>
+      </div>
+      
+      <div style="display:flex; justify-content:flex-end;">
+        <button class="btn-playful btn-primary" id="modal-action-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
