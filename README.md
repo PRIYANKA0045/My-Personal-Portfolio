@@ -15,7 +15,7 @@
 
 ## 📖 About
 
-Welcome to my personal portfolio.
+Welcome to My Personal Portfolio.
 
 This website serves as a central hub for my professional work, where I showcase my software development journey, AI projects, technical skills, certifications, and achievements.
 
@@ -34,8 +34,6 @@ The portfolio is designed with a modern, responsive interface to provide visitor
 * 📄 Resume download
 * 📬 Contact section
 * 📱 Fully responsive design
-* 🌙 Modern UI & smooth animations
-
 ---
 
 ## 🚀 Featured Projects
@@ -70,19 +68,6 @@ The portfolio is designed with a modern, responsive interface to provide visitor
 * Claude
 
 ---
-
-## 📂 Project Structure
-
-```text
-portfolio/
-│── App.tsx
-│── main.tsx
-├── package.json
-├── vite.config.ts
-├── tsconfig.json
-└── README.md
-```
-
 ---
 
 ## 🚀 Running Locally
